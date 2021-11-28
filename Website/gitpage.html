@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="docker.html">DOCKER</a></li>
+                <li><a href="webserver.html">WEBSERVER</a></li>
+                <li><a href="Vi.html">VI</a></li>
+            	<li><a href="linux.html">Linux</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">GIT</h3>
+    <img src="git.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <h3></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What is Git?</h3>
+    <p>Git is a piece of software that allows you to monitor changes in any group of files. It's typically used to coordinate work among programmers who are working on source code together during software development.</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">GIT BASH</h3><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <b>How to install Git Bash</b>
+            <p></p>	    
+	    <p>Git Bash comes included as part of the Git For Windows package. Download and install Git For Windows like other Windows applications. Once downloaded find the included .exe file and open to execute Git Bash.</p>
+            <b>How to use Git Bash</b>
+	    <p></p>
+	    <p>Git Bash has the same operations as a standard Bash experience. It will be helpful to review basic Bash usage. Advanced usage of Bash is outside the scope of this Git focused document.</p>            
+	    <img src="Microsoft.VisualStudio.Services.Icons.png" class="img-responsive margin" style="width:500px; height: 250px" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p></p>
+            <img src="https://user-images.githubusercontent.com/828400/31576764-825627b2-b0f9-11e7-8256-6f8e0798f9c9.gif" class="img-responsive margin" style="width:500px; height: 500px " alt="Image">
+        </div>
+        <div class="col-sm-4">
+	    <b>Commands</b>
+	    <p></p>            
+	    <p><b>git add</b> - Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index.</p>
+	    <p><b>git commit</b> - Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.</p>
+	    <p><b>git status</b> - This command returns the current state of the repository.</p>
+	    <p><b>git config</b> - With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email.</p>
+	    <p><b>git branch</b> - To determine what branch the local repository is on, add a new branch, or delete a branch.</p>
+	    <p><b>git checkout</b> - To start working in a different branch, use git checkout to switch branches.</p>
+            <!---<img src="https://rubygarage.s3.amazonaws.com/uploads/article_image/file/599/git-cheatsheet-5.jpg" class="img-responsive margin" style="width:500px; height: 250px" alt="Image"> --->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>This is GIT pdf: <a href="https://git-scm.com/book/en/v2">GIT pdf</a></p>
+</footer>
+</body>
+</html>
